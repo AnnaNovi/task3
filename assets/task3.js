@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	$.getJSON('http://jsonplaceholder.typicode.com/users', function (data) {
+	$.getJSON('https://jsonplaceholder.typicode.com/users', function (data) {
       let firstN = Math.floor(Math.random() * data.length);
       let secondN = Math.floor(Math.random() * data.length);
       let userList = '';
@@ -41,6 +41,3 @@ $( document ).ready(function() {
       }
   })
 });
-
-//$('.result').html(userList);
-//userList = [data[i].name + data[i].username];
